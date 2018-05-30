@@ -1,0 +1,19 @@
+
+.marked{
+    font-weight: bold;
+    color: #26a69a!important;
+}
+
+.waves-effect{
+    margin-bottom: 15px;
+}
+.remote{
+    display: block;
+}
+
+span{
+    color: #26a69a!important;
+}
+.card{
+    min-height: 500px!important;
+}

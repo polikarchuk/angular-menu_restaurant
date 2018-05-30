@@ -1,0 +1,103 @@
+[
+
+    {
+        "category": "Перша страва",
+        "name": "Юшка Карпатська",
+        "preview": "https://misteram.com.ua/uploads/images/1e8a85d5ca9a4300f487b66d9f47f379-400x0.png",
+        "price": "50 грн",
+        "description":"Картопля, шампіньйони,морква"
+
+
+    },
+    {
+        "category": "Перша страва",
+        "name": "Юшка Карпатська",
+        "preview": "https://misteram.com.ua/uploads/images/51ceaf3919588b7844bfcaf11d44a6c8-400x0.png",
+        "price": "65 грн",
+        "description":"Мисливські ковбаски, ковбаса варена, салямі, огірок консервований"
+
+
+    },
+    {
+        "category": "Перша страва",
+        "name": "Борщ",
+        "preview": "https://misteram.com.ua/uploads/images/76a92d5ee521cf70a6cee89e9b7855ae-400x0.png",
+        "price": "80 грн",
+        "description":"Картопля, цибуля, капуста, морква, буряк, томатна паста + 2 пишки,"
+
+
+    },
+    {
+        "category": "Перша страва",
+        "name": "Бульйон з пельменями",
+        "preview": "https://misteram.com.ua/uploads/images/e347df45454df9882e5add0d6e855eaa-400x0.png",
+        "price": "19 грн. грн",
+        "description":"Бульйон, пельмені з курячим фаршем, зелень"
+
+
+    },
+    {
+        "category": "Гарячі закуски",
+        "name": "Лаваш-гриль з куркою, томатами і сиром",
+        "preview": "https://misteram.com.ua/uploads/images/ac8b405e2df8b2c4a860f315f664f265-400x0.png",
+        "price": "60 грн",
+        "description":"І цим все сказано"
+
+
+    },
+    {
+        "category": "Гарячі закуски",
+        "name": "Лаваш-гриль зі смаженими шампіньонами",
+        "preview": "https://misteram.com.ua/uploads/images/0de897a1955631041d06f20fab783bc4-400x0.png",
+        "price": "85 грн",
+        "description":"Шинкою і сиром"
+
+
+    },
+    {
+        "category": "Гарячі закуски",
+        "name": "Овочі гриль",
+        "preview": "https://misteram.com.ua/uploads/images/58a1ae6dc077a5c011945863c69e7f9c-400x0.png",
+        "price": "45 грн",
+        "description":"Приготовані на пательні гриль в соєво-часничному соусі"
+
+
+    },
+    {
+        "category": "Гарячі закуски",
+        "name": "Сирні крокети з ніжного сиру",
+        "preview": "https://misteram.com.ua/uploads/images/58a1ae6dc077a5c011945863c69e7f9c-400x0.png",
+        "price": "35 грн",
+        "description":"У хрумому клярі з журавлиним соусом"
+
+
+    },
+    {
+        "category": "Десерти",
+        "name": "І цим все сказано.",
+        "preview": "https://misteram.com.ua/uploads/images/a970cbf17d568eed76088196aad356d4-400x0.png",
+        "price": "40 грн",
+        "description":"Шинкою і сиром"
+
+
+    },
+    {
+        "category": "Десерти",
+        "name": "Штрудель вишневий",
+        "preview": "https://misteram.com.ua/uploads/images/d26415c272c88907e27aa3fb0a81355b-400x0.png",
+        "price": "55 грн",
+        "description":"Подається з ванільним соусом та кулькою морозива (за 100 г)."
+
+
+    },
+    {
+        "category": "Десерти",
+        "name": "Штрудель яблучний",
+        "preview": "https://misteram.com.ua/uploads/images/b4f127b6e5a635dffec704894bc76cdf-400x0.png",
+        "price": "35 грн",
+        "description":"Подається з ванільним соусом та кулькою морозива (ціна за 100 г)."
+
+
+    }
+
+]

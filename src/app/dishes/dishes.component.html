@@ -1,0 +1,20 @@
+<div class="col s3 ">
+    <div class="card">
+        <div class="card-image">
+            <img src="{{user.preview}}">
+            <span class="card-title" [ngClass]="{'marked': isMarke}">
+
+                {{user.category }}
+            </span>
+        </div>
+        <div class="card-content">
+            <p>{{user.name}}</p>
+            <p></p>
+        </div>
+        <div class="card-action">
+            <p [ngClass]="{'marked': isMarke}">{{user.price}} грн </p>
+            <a (click)="addBuy()"  *ngIf='!isBasketDish' [ngClass]="{'active': remoteBuy}" class="waves-effect waves-light btn">Додати в кошик</a>
+            <a (click)="remoteBuy()" *ngIf='isBasketDish'   [ngClass]="{'active': deleteBuy}" class="waves-effect waves-light btn remote">Видалити</a>
+        </div>
+    </div>
+</div>
