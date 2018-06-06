@@ -8,7 +8,7 @@ import {BasketService} from "../basket.service";
   styleUrls:['./dishes.component.css']
 })
 export  class UserComponent {
-    @Input() user;
+    @Input() dishes;
 
 
     isMarke = false;
@@ -20,14 +20,14 @@ export  class UserComponent {
     addBuy(){
         this.isMarke = true;
         this.deleteBuy = true;
-        this.basketServise.BasketList.push(this.user);
-        console.log(this.user.price)
+        this.basketServise.BasketList.push(this.dishes);
+
     }
 
     remoteBuy(){
         this.deleteBuy = false;
         this.isMarke = false;
-        this.basketServise.BasketList = this.basketServise.BasketList.filter(x=>x!=this.user);
+        this.basketServise.BasketList = this.basketServise.BasketList.filter(x=>x!=this.dishes);
 
     }
 

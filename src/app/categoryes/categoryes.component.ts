@@ -15,6 +15,7 @@ export class CategoryesComponent implements OnInit {
     filterCategories(u){
         this.router.navigate([u.category]);
     }
+
     constructor (private categoryesServise: CategoryesService, @Inject(Router) private router: Router){
 
     }

@@ -1,5 +1,5 @@
 import {Component, Inject, OnInit} from '@angular/core';
-import {UserService} from "../dishes.service";
+import {DishesService} from "../dishes.service";
 import {ActivatedRoute} from "@angular/router";
 
 @Component({
@@ -11,7 +11,7 @@ export class HomePageComponent  {
     dish = [];
     serchStr ="";
 
-    constructor (private userServise: UserService, @Inject(ActivatedRoute) private activated: ActivatedRoute){
+    constructor (private dishesServise: DishesService, @Inject(ActivatedRoute) private activated: ActivatedRoute){
         activated.params.subscribe(data=>{
             let category = data.category;
             this.init(category)
@@ -20,7 +20,8 @@ export class HomePageComponent  {
     }
 
     init(category?: string){
-        this.userServise.getUsers().subscribe((dish:any) =>{
+        this.dishesServise.getDishes()
+        .subscribe((dish:any) =>{
         if(!category){
             this.dish = dish;
         }

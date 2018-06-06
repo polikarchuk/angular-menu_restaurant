@@ -1,15 +1,20 @@
+
+
 <div class="row">
   <div class="input-field col s6">
     <input id="first_name" type="text" class="validate"[(ngModel)]="serchStr">
     <label class="active" for="first_name">search by name</label>
   </div>
-  <div class="col s6" >
+  <div class="col s3" >
+    <a routerLink="/addNewDishe" class="waves-effect waves-light btn remote">Добавити страву</a>
+  </div>
+  <div class="col s3" >
     <a routerLink="/basket" class="waves-effect waves-light btn remote">Корзина</a>
   </div>
 </div>
 <div class="row">
   <app-dish
           *ngFor = " let u of dish | search:serchStr"
-          [user] ="u">
+          [dishes]="u">
   </app-dish>
 </div>

@@ -8,6 +8,9 @@ import {BasketService} from "../basket.service";
   styleUrls: ['./basket-page.component.css']
 })
 export class BasketPageComponent {
+    sumDishes(){
+        return this.basketServise.totalSumPrice()
+    }
     constructor (@Inject(BasketService) public basketServise: BasketService){
 
     }

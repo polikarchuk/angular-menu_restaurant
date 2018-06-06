@@ -1,7 +1,7 @@
 <div class="row">
     <div class="col s2">
-        <p>Загальна сума {{basketServise.totalSumPrice()}}  грн</p>
+        <p>Загальна сума {{sumDishes()}}  грн</p>
     </div>
 
 </div>
-<app-dish *ngFor="let dish of basketServise.BasketList" [isBasketDish]="true" [user]="dish"></app-dish>
+<app-dish *ngFor="let dish of basketServise.BasketList" [isBasketDish]="true" [dishes]="dish"></app-dish>
