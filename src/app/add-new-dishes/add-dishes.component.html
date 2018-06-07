@@ -1,0 +1,26 @@
+<div class="row">
+  <form>
+    <div class="input-field col s3">
+      <input id="first_name_1" type="text" required [formControl]="categoryesControl.get('category')"  class="validate">
+      <label class="active" for="first_name_1">Категорія</label>
+    </div>
+    <div class="input-field col s3">
+      <input id="first_name_2" type="text" required [formControl]="categoryesControl.get('name')"   class="validate">
+      <label class="active" for="first_name_2">Назва</label>
+    </div>
+    <div class="input-field col s3">
+      <input id="first_name_3" type="text"  required [formControl]="categoryesControl.get('price')"  class="validate">
+      <label class="active" for="first_name_3">Ціна</label>
+    </div>
+    <div class="input-field col s3">
+      <input type="file"  (change)="addPhotoDishe($event)"  class="validate">
+      <label class="active" for="first_name_3">Ціна</label>
+    </div>
+
+
+
+    <button class="btn waves-effect waves-light" routerLink="/home" (click)="addDishes()" type="submit" name="action">save
+    </button>
+  </form>
+
+</div>
