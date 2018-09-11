@@ -4,9 +4,9 @@ import {Router} from "@angular/router";
 
 
 @Component({
-  selector: 'app-categories',
-  templateUrl: './categoryes.component.html',
-  styleUrls: ['./categoryes.component.css']
+    selector: 'app-categories',
+    templateUrl: './categoryes.component.html',
+    styleUrls: ['./categoryes.component.css']
 })
 export class CategoryesComponent implements OnInit {
     listCategoryes = [

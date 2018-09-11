@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import {FormBuilder, FormControl, FormGroup} from "@angular/forms";
+import {FormBuilder, FormControl,Validators, FormGroup} from "@angular/forms";
 import {DishesService} from "../dishes.service";
 import {DomSanitizer} from "@angular/platform-browser";
+
 
 @Component({
   selector: 'app-add-dishes',
@@ -17,8 +18,11 @@ export class AddDishesComponent implements OnInit {
 
 
     addDishes (){
-        this.aDishes = true;
-        this.dishesServise.dishes.push(this.categoryesControl.value);
+        if(this.categoryesControl.valid) {
+            this.aDishes = true;
+            this.dishesServise.dishes.push(this.categoryesControl.value);
+        }
+        else alert('Error')
 
 
     }
@@ -32,10 +36,12 @@ export class AddDishesComponent implements OnInit {
 
   ngOnInit() {
     this.categoryesControl = this.fb.group({
-        category:["Перша страва"],
-        name:["Борщ"],
-        price:["20"],
-        preview:[]
+        category:["Перша страва",Validators.required],
+        name:["Борщ",Validators.required],
+        price:["20",Validators.required],
+        preview:[Validators.required],
+
+
 
     })
       this.categoryesControl.valueChanges.subscribe((value)=> console.log(value))
